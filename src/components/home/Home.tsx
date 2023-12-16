@@ -17,7 +17,7 @@ export default component$(() => {
     });
 
     useVisibleTask$(() => {
-        let v = new Vibrant('https://avatars.githubusercontent.com/u/36968271/')
+        const v = new Vibrant('https://avatars.githubusercontent.com/u/36968271/')
         v.getPalette((err, palette) => console.log(palette))
     })
 
