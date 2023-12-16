@@ -1,0 +1,6 @@
+@import url('https://api.fonts.coollabs.io/css2?family=Sora:wght@300;500;700&family=Space+Grotesk:wght@300;500;700&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=Inter:wght@200;400&family=Krona+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
