@@ -1,8 +1,8 @@
-import { component$, type QwikIntrinsicElements } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 
-export default component$((props: QwikIntrinsicElements['svg']) => {
+export default component$(() => {
     return (
-        <div {...props}>
+        <div class="dark:bg-gray-950 dark:text-white flex justify-center items-center w-full h-screen absolute">
             about page
         </div>
     )

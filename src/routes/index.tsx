@@ -1,7 +1,9 @@
 import { Signal, component$, createContextId, useContextProvider, useSignal, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import Home from "~/components/home/Home";
+import Cursor from "~/components/misc/Cursor";
 import Navbar from "~/components/navbar/Navbar";
+
 
 export const SelectedPageCtx = createContextId<Signal<any>>(
   'grng.selectedpage'
@@ -67,6 +69,7 @@ export default component$(() => {
 
   return (
     <>
+      <Cursor />
       <Navbar />
       <selectedPage.value/>
     </>

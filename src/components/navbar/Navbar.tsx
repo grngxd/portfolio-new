@@ -20,6 +20,7 @@ const icons : any = {
 const NavItem = component$((props : { text: string, component : any }) => {
     const Icon = icons[props.text];
     const selectedPage = useContext(SelectedPageCtx)
+
     return (
         <div class={"!z-[3] flex flex-row items-center justify-around select-none font-krona text-xs p-1 h-full text-center rounded-full writing-mode-vertical active:scale-90 hover:scale-115 duration-400 transition-all " + (selectedPage.value == props.component ? "dark:bg-white dark:text-gray-950 bg-gray-200 text-gray-950 scale-115" : "bg-transparent hover:dark:bg-white hover:text-gray-950 dark:text-white hover:bg-gray-200 :text-gray-950 text-gray-950 dark:hover:text-gray-950")} onMouseDown$={$(() => {
             console.log('NavItem clicked');
